@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/645c35f719.js"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="">HOME</a> </li>
+                    <li> <a href="">ABOUT</a> </li>
+                    <li> <a href="">COURSE</a> </li>
+                    <li> <a href="">BLOG</a> </li>
+                    <li> <a href="">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+
+            <h1>World's Biggest University</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Nobis nihil laboriosam minus ea perferendis quo perspiciatis rem enim! debitis deleniti aspernatur maiores aliquam corrupti soluta iure nemo fugit cupiditate.
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+
+        </div>
+    </section>
+
+    <!-- Course webpage part-->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor fugit mollitia at distinctio! Excepturi modi ullam quia eaque sed quasi, nesciunt temporibus quos dicta nulla distinctio omnis vero. Molestias!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor fugit mollitia at distinctio! Excepturi modi ullam quia eaque sed quasi, nesciunt temporibus quos dicta nulla distinctio omnis vero. Molestias!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor fugit mollitia at distinctio! Excepturi modi ullam quia eaque sed quasi, nesciunt temporibus quos dicta nulla distinctio omnis vero. Molestias!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu in mobile mode -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
